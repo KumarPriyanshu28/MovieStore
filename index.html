@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="popcorn.png">
+    <title>MovieStore</title>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img id="pic" src="popcorn.png"/>
+            <h1>MovieStore</h1>
+        </div>
+        <div class="search-box">
+            <form id="form">
+                <label>Search Movies: </label>
+                <input type="text" placeholder="Search..." id="search-input" name="movies"/>
+                <button id="search-btn">Search</button>
+            </form>
+
+        </div>
+    </div>
+    <div class="header">
+        <h1 class="results-header">Now Playing</h1>
+    </div>
+    
+    <div id="movies-grid">
+        
+    </div>
+    <div class="movie-popup">
+        
+    </div>
+    <div class="more">
+        <button id="load-more-movies-btn">Load More</button>
+        <button id="close-search-btn">Clear Search</button>
+        <button id="top-btn">Top</button>
+    </div>
+    <script src="script.js"></script>
+    <div class="footer">
+        <p>Powered by:</p>
+        <img class = "tmdb-logo" src="tmdb-logo.svg">
+    </div>
+    
+</body>
+</html>

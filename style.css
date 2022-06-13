@@ -1,0 +1,164 @@
+html {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    color: ghostwhite;
+    background-color: rgb(4, 18, 40);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Limelight', cursive, Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.results-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Limelight', cursive, Arial, Helvetica, sans-serif;
+}
+
+#form {
+    font-size: larger;
+    text-align: left;
+}
+
+input {
+    border: 0;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#pic {
+    width: 50px;
+    height: auto;
+}
+
+.movie-info {
+    margin-left: 10px;
+}
+
+#movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,510px);
+    grid-auto-rows: auto;
+    justify-content: center;
+    width: 95vw;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: rgba(0, 162, 255, 0.196);
+    border-radius: 25px;
+}
+
+.movie-card img:hover {
+    opacity: .5;
+}
+
+.movie-poster {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.movie-popup {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.584);
+}
+
+.video-container {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    margin-top: 20%;
+    width: 50vh;
+    height: 30vh;
+}
+
+.movie-info-container {
+    background-color: rgba(0, 0, 0, 0.725);
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px; 
+    color: white;
+    width: 50vh;
+    height: auto;
+    border-radius: 25px;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tmdb-logo {
+    width: 100px;
+    height: auto;
+    padding-left: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#load-more-movies-btn {
+    display: flex;
+    position: fixed;
+    bottom: -4px;
+}
+#close-search-btn {
+    display: none;
+    position: fixed;
+    top: -4px;
+}
+
+#top-btn {
+    position: fixed;
+    bottom: -4px;
+    right: 10px;
+}
+
+#search-btn, #load-more-movies-btn, #close-search-btn, #top-btn {
+    background-color: rgba(0, 162, 255, 0.196);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
